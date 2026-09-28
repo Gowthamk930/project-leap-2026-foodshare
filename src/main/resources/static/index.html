@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodShare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">FoodShare</div>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#food">Food</a>
+        <a href="#donors">Donors</a>
+        <a href="#ngos">NGOs</a>
+        <a href="#claims">Claims</a>
+    </div>
+</nav>
+
+
+<section id="home" class="hero">
+
+    <div class="hero-text">
+        <h1>Share Food.<br>Share Hope.</h1>
+
+        <p>
+            FoodShare connects surplus food with people
+            and organizations who need it.
+        </p>
+
+        <button onclick="showFood()">View Available Food</button>
+    </div>
+
+</section>
+
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h2 id="foodCount">0</h2>
+        <p>Food Listings</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="donorCount">0</h2>
+        <p>Donors</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="ngoCount">0</h2>
+        <p>NGOs</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="claimCount">0</h2>
+        <p>Food Claims</p>
+    </div>
+
+</section>
+
+
+<!-- FOOD SECTION -->
+
+<section id="food" class="section">
+
+    <h2>Available Food</h2>
+
+    <p class="section-description">
+        Food currently available for donation.
+    </p>
+
+    <div id="foodList" class="data-container">
+        Loading food...
+    </div>
+
+
+    <div class="form-container">
+
+        <h3>Add Food Donation</h3>
+
+        <input type="text"
+               id="foodName"
+               placeholder="Food Name">
+
+        <input type="number"
+               id="quantity"
+               placeholder="Quantity">
+
+        <input type="text"
+               id="location"
+               placeholder="Location">
+
+        <input type="date"
+               id="expiryDate">
+
+        <input type="number"
+               id="donorId"
+               placeholder="Donor ID">
+
+        <button onclick="addFood()">Add Food</button>
+
+        <p id="foodMessage"></p>
+
+    </div>
+
+</section>
+
+
+<!-- DONOR SECTION -->
+
+<section id="donors" class="section">
+
+    <h2>Our Donors</h2>
+
+    <p class="section-description">
+        People and organizations helping reduce food waste.
+    </p>
+
+    <div id="donorList" class="data-container">
+        Loading donors...
+    </div>
+
+</section>
+
+
+<!-- NGO SECTION -->
+
+<section id="ngos" class="section">
+
+    <h2>Partner NGOs</h2>
+
+    <p class="section-description">
+        NGOs receiving and distributing donated food.
+    </p>
+
+    <div id="ngoList" class="data-container">
+        Loading NGOs...
+    </div>
+
+</section>
+
+
+<!-- CLAIM SECTION -->
+
+<section id="claims" class="section">
+
+    <h2>Food Claims</h2>
+
+    <p class="section-description">
+        Food claimed by NGOs.
+    </p>
+
+    <div id="claimList" class="data-container">
+        Loading claims...
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h2>FoodShare</h2>
+
+    <p>
+        Turning surplus food into shared meals.
+    </p>
+
+    <p>
+        © 2026 FoodShare
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

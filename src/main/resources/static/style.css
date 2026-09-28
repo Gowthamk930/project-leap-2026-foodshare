@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f8f5;
+    color: #333;
+}
+
+
+/* NAVBAR */
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #2e7d32;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #e8f5e9, #f5fff6);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0 0 20px;
+    color: #1b5e20;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* BUTTON */
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+
+/* STAT CARDS */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 8%;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.stat-card {
+    width: 210px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #f5f8f5;
+}
+
+.stat-card h2 {
+    font-size: 35px;
+    color: #2e7d32;
+    margin: 0;
+}
+
+.stat-card p {
+    color: #666;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 70px 10%;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #1b5e20;
+}
+
+.section-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+
+/* DATA CARDS */
+
+.data-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.data-card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.data-card h3 {
+    color: #2e7d32;
+    margin-top: 0;
+}
+
+.data-card p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.empty {
+    color: #777;
+    text-align: center;
+}
+
+
+/* ADD FOOD FORM */
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h3 {
+    text-align: center;
+    color: #2e7d32;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-container button {
+    width: 100%;
+}
+
+#foodMessage {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+footer h2 {
+    margin: 0 0 10px;
+}
